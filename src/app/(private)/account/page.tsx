@@ -5,6 +5,7 @@ import { currentUser } from "@clerk/nextjs/server"
     console.log(userInfo)
    return (<>
    <div>account</div>
+   <div>changes</div>
    </>)
 }
 export default account
