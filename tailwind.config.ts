@@ -2,9 +2,11 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',    // for App Router
-    './pages/**/*.{js,ts,jsx,tsx}',  // for Page Router (if used)
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{js,ts,jsx,tsx}',    // for App Router
+    './src/pages/**/*.{js,ts,jsx,tsx}',  // for Page Router (if used)
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/layout-provider/**/*.{js,ts,jsx,tsx}',
+
   ],
   theme: {
     extend: {
