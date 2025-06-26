@@ -52,7 +52,10 @@ export async function getCurrentUser() {
 
     const response = await saveCurrentUser(userDetails);
     if (response.success) {
-      return response;
+      return {
+        success:true,
+        data:response.data
+      };
     }
     throw new Error("Error while saving user data");
   } catch (error: any) {
